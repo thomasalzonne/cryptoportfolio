@@ -1,15 +1,23 @@
-import Header from "./Header";
-import Navbar from "./Navbar";
+import type { ReactNode } from 'react'
+import Header from './Header'
+import Navbar from './Navbar'
 
-export default function Layout({ children }: any) {
-    
-    return(
-        <div className='min-h-screen w-screen flex flex-col p-4'>
-            <Header/>
-            <div className="flex space-x-4 mt-8">
-                <Navbar/>
-                {children}
-            </div>
+interface LayoutProps {
+  children: ReactNode
+}
+
+export default function Layout({ children }: LayoutProps) {
+  return (
+    <div className="min-h-screen w-full bg-white dark:bg-gray-950 transition-colors duration-300">
+      <div className="p-4">
+        <Header />
+        <div className="flex gap-4 mt-8">
+          <Navbar />
+          <main className="flex-1">
+            {children}
+          </main>
         </div>
-    )
+      </div>
+    </div>
+  )
 }
