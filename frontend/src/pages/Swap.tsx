@@ -1,8 +1,11 @@
+import PageLayout from "../components/pages/PageLayout";
+import PageHeader from "../components/pages/Header";
+
 export default function Swap() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold text-white mb-6">Swap</h1>
+    <PageLayout>
+      <PageHeader title="Swap"/>
       <p className="text-gray-400">Échangez vos cryptos</p>
-    </div>
+    </PageLayout>
   )
 }
