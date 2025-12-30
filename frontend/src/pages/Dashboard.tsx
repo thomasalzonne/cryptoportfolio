@@ -1,6 +1,7 @@
 import PageHeader from '../components/pages/Header'
 import PageLayout from '../components/pages/PageLayout'
 import Table from '../components/Table'
+import WalletCard from '../components/WalletCard'
 
 export default function Dashboard() {
   return (
@@ -14,14 +15,14 @@ export default function Dashboard() {
         </div>
 
         <div className="space-y-6">
-          <div className="bg-gray-100 dark:bg-gray-800 rounded-xl p-4 md:p-6 transition-colors duration-300">
+          <div className="bg-gray-100 dark:bg-gray-900 rounded-xl p-4 md:p-6 transition-colors duration-300">
             <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">Swap</h3>
             <p className="text-gray-600 dark:text-gray-400">Swap Component</p>
           </div>
           
-          <div className="bg-gray-100 dark:bg-gray-800 rounded-xl p-4 md:p-6 transition-colors duration-300">
+          <div className="bg-gray-100 dark:bg-gray-900 rounded-xl p-4 md:p-6 transition-colors duration-300">
             <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">Wallet</h3>
-            <p className="text-gray-600 dark:text-gray-400">Wallet Component</p>
+            <WalletCard/>
           </div>
         </div>
       </div>
