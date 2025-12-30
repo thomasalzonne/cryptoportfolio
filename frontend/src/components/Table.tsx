@@ -30,7 +30,7 @@ export default function Table() {
           <div className="text-right">Market Cap</div>
         </div>
         
-        <div className="bg-slate-400/10 rounded-lg overflow-hidden">
+        <div className="bg-slate-400/5 rounded-lg overflow-hidden">
           {cryptos.map((crypto, index) => (
             <div 
               key={crypto.rank}
